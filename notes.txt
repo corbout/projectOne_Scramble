@@ -1,0 +1,16 @@
+//Goal of the game is for the user to guess words...
+  //User guesses correctly... then they should level up to next level
+    //more time as mushroom
+
+//Timer function
+  //times level with words 10 words per minute
+//Math function that takes the answers/correct answers /with time and then either level do again or move to next level
+
+//User input/ if right word then {
+next word + marker that marks it right
+}
+else {
+next word + marker that marks it wrong
+}
+
+git reset HEAD --hard //restores repo to current commit

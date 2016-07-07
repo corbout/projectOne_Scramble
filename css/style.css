@@ -1,0 +1,88 @@
+body {
+  background-color: black;
+}
+
+header {
+  text-align: center;
+  font-size: 55px;
+  color: black;
+  font-style: solid;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 3px 3px 3px rgba(150, 150, 150, 1);
+}
+
+#timer {
+  font: arial;
+  font-size: 25px;
+  margin-left: auto;
+  display: inline-block;
+  margin-top: 5px;
+  padding: 2px 2px 2px 2px;
+  border: solid black;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 7px 9px 5px 0px rgba(136,136,136,0.44);
+  width: auto;
+  position: absolute;
+}
+
+#scoreBox {
+  font: arial;
+  font-size: 25px;
+  margin-left: auto;
+  display: inline-block;
+  margin-top: 5px;
+  padding: 2px 2px 2px 2px;
+  border: solid black;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 7px 9px 5px 0px rgba(136,136,136,0.44);
+  margin-left: 20px;
+  width: 125px;
+}
+
+
+#guessWord {
+  border: solid black;
+  background-color: white;
+  width: 500px;
+  height: 300px;
+  padding-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  text-align: center;
+  box-shadow: 7px 9px 5px 0px rgba(136,136,136,0.44);
+  text-shadow: 3px 3px 3px rgba(150, 150, 150, 1);
+}
+
+#answerInput {
+  border-colro: black;
+  border-style: groove;
+  background-color: white;
+  width: 245px;
+  margin-right:auto;
+  margin-top: 20px;
+  margin-left: 105px;
+  display: inline-block;
+}
+
+#submitButton {
+  font-family: 'Montserrat', sans-serif;
+  position: inherit;
+}
+
+#gameScreen {
+  background-color: transparent;
+  width: 500px;
+  height: 300px;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+#instructions {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 75px;
+  font-size: 15px;
+}
