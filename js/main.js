@@ -30,7 +30,6 @@ function shuffle(array) {
 
 var randomWordGenerator = function(e) {
 	if (e.keyCode === 16) {
-		console.log("clicked");
 	// randomWord variable
 	randomWord = wordArray[randomNumber()];
 	// splits randomWord into an array
