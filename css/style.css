@@ -1,6 +1,7 @@
-body {
-  background-color: black;
-}
+/*#startUpScreen {
+  width: auto;
+  height:auto;
+}*/
 
 header {
   text-align: center;
@@ -23,6 +24,7 @@ header {
   box-shadow: 7px 9px 5px 0px rgba(136,136,136,0.44);
   width: auto;
   position: absolute;
+  border-radius: 15px 15px 15px 15px;
 }
 
 #scoreBox {
@@ -37,6 +39,7 @@ header {
   box-shadow: 7px 9px 5px 0px rgba(136,136,136,0.44);
   margin-left: 20px;
   width: 125px;
+  border-radius: 15px 15px 15px 15px;
 }
 
 
@@ -54,6 +57,7 @@ header {
   text-align: center;
   box-shadow: 7px 9px 5px 0px rgba(136,136,136,0.44);
   text-shadow: 3px 3px 3px rgba(150, 150, 150, 1);
+  border-radius: 20px 20px 20px 20px;
 }
 
 #answerInput {
@@ -73,6 +77,7 @@ header {
 }
 
 #gameScreen {
+  margin-top: 50px;
   background-color: transparent;
   width: 500px;
   height: 300px;
@@ -83,6 +88,6 @@ header {
 #instructions {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  margin-top: 75px;
+  margin-top: 150px;
   font-size: 15px;
 }
