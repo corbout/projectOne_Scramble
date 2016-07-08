@@ -43,12 +43,20 @@ var randomWordGenerator = function(e) {
 	}
 };
 
-
 $(document).on('keydown', randomWordGenerator)
 
+// increase score +1 for every correct answer
 function scoreCount() {
 	score++;
 	$('#scoreBox').text("Score: " + score);
+}
+
+// decrease score for every incorrect answer
+function scoreMinus() {
+	if (score > 0) {
+	score--;
+	$('#scoreBox').text("Score: " + score);
+	}
 }
 
 var keyInput = function(e) {
@@ -61,6 +69,7 @@ var keyInput = function(e) {
 				$('#answerInput').val('');
 			}
 			else {
+				scoreMinus();
 				$('#guessWord').html(randomWord);
 				$('#answerInput').val('');
 			}

@@ -13,4 +13,6 @@ else {
 next word + marker that marks it wrong
 }
 
+re shuffle function
+
 git reset HEAD --hard //restores repo to current commit
