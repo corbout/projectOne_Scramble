@@ -28,7 +28,7 @@ function shuffle(array) {
 	return array;
 }
 
-$(document).on('keydown', function(e) {
+var randomWordGenerator = function(e) {
 	if (e.keyCode === 16) {
 		console.log("clicked");
 	// randomWord variable
@@ -41,16 +41,17 @@ $(document).on('keydown', function(e) {
 	console.log(joinSplitRandomWord);
 	$('#guessWord').html(joinSplitRandomWord);
 	}
-});
+};
+
+
+$(document).on('keydown', randomWordGenerator)
 
 function scoreCount() {
 	score++;
 	$('#scoreBox').text("Score: " + score);
 }
 
-// submit button
-$('#answerInput').focus();
-$(document).on('keydown', function(e) {
+var keyInput = function(e) {
 		if (e.keyCode === 13) {
 			console.log("clicked");
 			var answer = $('#answerInput').val();
@@ -64,7 +65,11 @@ $(document).on('keydown', function(e) {
 				$('#answerInput').val('');
 			}
 		}
-});
+};
+
+// submit button
+$('#answerInput').focus();
+$(document).on('keydown', keyInput);
 
 // restarts game
 $(document).on('keydown', function resetGame(e) {
@@ -80,6 +85,8 @@ function timer() {
 		gameOver = true;
 		$("#guessWord").html("Game Over");
 		$("#guessWord").html("Final Score: " + score);
+		$(document).off('keydown', randomWordGenerator);
+		$(document).off('keydown', keyInput);
 		return;
 	}
 	$("#timer").text((timerCount < 10 ? "0:0" : "0:")+timerCount--)
