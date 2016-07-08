@@ -16,7 +16,7 @@ function randomNumber() {
 	return number
 }
 
-//shuffle function
+//shuffle formula function
 function shuffle(array) {
 	var m = array.length, t, i;
 	while (m) {
